@@ -1,0 +1,35 @@
+{
+  "short_name": "Hyperpure DA",
+  "name": "Hyperpure - Delivery Agent",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./images/o9t.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/off.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/fot.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/oft.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#B5B5B5",
+  "background_color": "#ffffff"
+}

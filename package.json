@@ -1,0 +1,55 @@
+{
+  "name": "logistic-pwa",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "env-cmd": "^10.0.1",
+    "jwt-decode": "^2.2.0",
+    "lodash-es": "^4.17.15",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.0",
+    "query-string": "^6.8.1",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-breadcrumbs-dynamic": "^1.2.0",
+    "react-datetime": "^2.16.3",
+    "react-dom": "^16.8.6",
+    "react-google-login": "^5.0.5",
+    "react-localization": "^1.0.14",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "^3.3.0",
+    "react-through": "^1.1.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^8.0.2",
+    "styled-components": "^4.3.2",
+    "sushiweb": "^0.2.87"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:staging": "env-cmd -f .env.staging npm run build",
+    "build:dev": "env-cmd -f .env.dev npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

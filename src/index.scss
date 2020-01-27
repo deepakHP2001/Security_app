@@ -1,0 +1,671 @@
+@import 'styles/grid.scss';
+@import 'styles/buttons.scss';
+@import 'styles/form.scss';
+@import 'styles/fonts.scss';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Okra-Regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  font-size: 8px;
+  height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: none
+}
+
+#root {
+  height: inherit;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+* {
+  box-sizing: border-box;
+  height: auto;
+  font-family: 'Okra-Regular', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Okra-Medium';
+}
+
+.align-middle-container {
+  height: 100vh;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.vertical-align-top {
+  vertical-align: text-top;
+}
+
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
+
+.vertical-align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+.hp-container {
+  min-height: 100vh;
+  position: relative;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.relative {
+  position: relative;
+}
+
+.success-container {
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-container {
+  padding: 0px 40px 40px 320px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.hp-container-mobile {
+  padding: 0;
+  padding-top: 20px;
+
+  @media (max-width: $sm-screen) {
+    padding: 20px 30px 10px 30px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.offline-msg {
+  position: fixed;
+  display: inline-block;
+  background-color: $pri-red;
+  margin: auto;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 4px 4px;
+  width: 232px;
+  text-align: center;
+  z-index: 1100;
+  top: 0;
+}
+
+.white-wrap {
+  background-color: #fff;
+}
+
+.gray-wrap {
+  background-color: $gray-wrap;
+}
+
+.w-600 {
+  font-weight: 600;
+}
+
+.w-400 {
+  font-weight: 400;
+}
+
+.w-200 {
+  font-weight: 200;
+}
+
+.green-text {
+  color: $sec-green !important;
+}
+
+.sushi-green-text {
+  color: $sushi-green !important;
+}
+
+.blue-text {
+  color: $pri-blue !important;
+
+  svg {
+    fill: $pri-blue !important;
+  }
+}
+
+.gray-text {
+  color: $med-gray !important;
+}
+
+.red-text {
+  color: $pri-red !important;
+}
+
+.white-text {
+  color: #FFFFFF !important;
+}
+
+.black-text {
+  color: $dark-gray !important;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+a.green-link {
+  color: $pri-green !important;
+
+  &:hover {
+    color: $pri-green !important;
+  }
+}
+
+.green-link {
+  color: $pri-green !important;
+
+  &:hover {
+    color: $pri-green !important;
+  }
+}
+
+a.blue-link {
+  color: $pri-blue !important;
+}
+
+a.gray-link {
+  color: $med-gray !important;
+}
+
+a.black-link {
+  color: $dark-gray !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-44 {
+  font-size: 44px;
+}
+
+.mobile-only {
+  display: none !important;
+
+  @media (max-width: $sm-screen) {
+    display: inline-block !important;
+  }
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.desktop-only {
+  display: inline-block !important;
+
+  @media (max-width: $sm-screen) {
+    display: none !important;
+  }
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $pri-blue;
+  }
+}
+
+.pd-top-global {
+  padding-top: 70px !important;
+}
+
+.pd-bottom-global {
+  padding-bottom: 80px !important;
+}
+
+.pd-top-20 {
+  padding-top: 20px !important;
+}
+
+.pd-top-10 {
+  padding-top: 10px !important;
+}
+
+.pd-top-5 {
+  padding-top: 5px !important;
+}
+
+.pd-top-30 {
+  padding-top: 30px;
+}
+
+.pd-top-60 {
+  padding-top: 60px;
+}
+
+.pd-right-20 {
+  padding-right: 20px;
+}
+
+.pd-right-05 {
+  padding-right: 5px;
+}
+
+.pd-left-10 {
+  padding-left: 10px;
+}
+
+.pd-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.pd-20 {
+  padding: 20px;
+}
+
+ul.inline-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.disabled {
+  color: $dark-gray;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.light-line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: $filter-btn-gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.green-line-vertical {
+  display: inline-block;
+  width: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: $sushi-green-highlight;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+.ml-1 {
+  margin-left: 10px;
+}
+
+.ml-05 {
+  margin-left: 5px;;
+}
+
+.mr-05 {
+  margin-right: 5px;
+}
+
+.mt-neg-3 {
+  margin-top: -30px;
+}
+
+.mt-neg-2 {
+  margin-top: -20px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mt-7 {
+  margin-top: 70px;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.z-index-5 {
+  z-index: 5;;
+}
+
+.z-index-9 {
+  z-index: 9;
+}
+
+.blur {
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+  * {
+    pointer-events: none !important;
+  }
+}
+
+.bottom-80 {
+  bottom: 80px;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.width-100 {
+  width: 100%
+}
+
+.arrow-bottom {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: $filter-btn-gray;
+  transform: rotate(45deg);
+  border: 1px solid $gray-wrap;
+  border-left: 0;
+  border-top: 0;
+  position: absolute;
+  bottom: -5px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.error {
+  color: $pri-red;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.mh-100 {
+  min-height: 100vh;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.disabled {
+  color: $med-gray !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+hr {
+  color: red;
+}
+
+.pwa-container {
+  max-width: 640px;
+  width: 100%;
+}
+
+.mh-100 {
+  min-height: 100vh;
+}
+
+.absolute {
+  position: absolute;
+  right: 0;
+  border: 0 !important;
+  padding: 0;
+}
+
+.z-highest {
+  z-index: 2001;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.warning {
+  padding: 10px 20px;
+}
+
+.horizontal-scroll {
+  width: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.reverse {
+  transform: rotate(90deg);
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.flex-margin {
+  margin-left: auto !important;
+}
+
+// spineer
+.animate-spinner {
+  animation: spin 5s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// sushi icon styling
+.icon-fs-14 {
+  svg {
+    width: 14px;
+  }
+}
+
+.icon-fs-15 {
+  svg {
+    width: 15px;
+  }
+}
+
+.icon-fs-16 {
+  svg {
+    width: 16px;
+  }
+}
+
+.icon-color-gray {
+  svg {
+    fill: $sushi-gray;
+  }
+
+}
+
+.icon-color-green {
+  svg {
+    fill: $sushi-green-highlight;
+  }
+}
+
+.icon-color-red {
+  svg {
+    fill: $pri-red;
+  }
+}
+
+.icon-color-blue {
+  svg {
+      fill: $blue-color
+  }
+}
+
+.sushi-icon {
+  display: inline-block !important;
+  overflow: auto;
+}
+
+.sushi-icon-align {
+  svg {
+    margin-top: 2px;
+  }
+}
+.icon-size-small {
+  svg {
+    width: 13px;
+  }
+}
+.fixed {
+  position: fixed;
+}
+
+.okra-med {
+  font-family: 'Okra-Medium';
+}
+
+.sushi-icon-align-neg {
+  svg {
+    margin-top: -2px;
+  }
+}
+
+.flex-vertical-align {
+  align-items: center;
+}
+
+.flex-center-align {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-medium {
+  svg {
+    width: 13px;
+  }
+}

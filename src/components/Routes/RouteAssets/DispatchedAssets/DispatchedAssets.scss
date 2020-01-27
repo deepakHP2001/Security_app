@@ -1,0 +1,38 @@
+@import './../../../../styles/variables.scss';
+
+.dipatched-assets-wrapper {
+    padding-bottom: 20px;
+
+    .head {
+        padding: 20px 10px;
+        background: $gray-wrap;
+        border-bottom: 1px solid $light-gray;
+
+        .title {
+            font-weight: 600;
+        }
+    }
+
+    .assets-table {
+        font-size: 14px;
+        .rows {
+            display: flex;
+            padding: 20px;
+            padding-left: 20px;
+            border-bottom: 1px solid $gray-wrap;
+            color: $sushi-gray-light;
+
+            div {
+                flex-basis: 50%;
+            }
+
+            &:first-child {
+                background: $gray-wrap;
+            }
+        }
+    }
+
+    .truck-info {
+        padding: 20px;
+    }
+}

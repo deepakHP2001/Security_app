@@ -1,0 +1,68 @@
+@import './../../../styles/variables.scss';
+
+.search-field-wrap {
+    position: relative;
+    margin: 0 20px;
+  
+    .search-field__input {
+      background-color: $lightest-gray;
+      outline: none;
+      border-radius: 6px;
+      padding: 15px;
+      color: #000;
+      border: 0;
+      font-size: 14px;
+      transition: all 0.2s ease-in-out;
+      outline: none;
+      box-shadow: 0px 2px 8px rgba(28, 28, 28, 0.08);
+  
+      &:disabled {
+        color: $dark-gray;
+        cursor: not-allowed;
+      }
+  
+      &:focus {
+        outline: none;
+        box-shadow: 0;
+      }
+    }
+  
+    
+    .search-input {
+      font-size: 15px !important;
+      background-color: #fff !important;
+      padding: 14px 14px 14px 32px;
+      border: 0.5px solid $sushi-gray-border;
+  
+      &:focus {
+        outline: none;
+      }
+  
+      i svg {
+        width: 14px !important;
+        height: 14px !important;
+      }
+    }
+  
+    .search-input--left-icon {
+      padding-left: 32px;
+      border-radius: 8px !important;
+    }
+  
+    .left-icon {
+      left: 24px;
+      top: 0;
+      position: absolute;
+      padding: 0;
+      margin: 0;
+  
+      .icon {
+        right: 0;
+  
+        svg {
+          width: 14px;
+          opacity: 0.6;
+        }
+      }
+    }
+  }

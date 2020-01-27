@@ -1,0 +1,23 @@
+@import './../../../styles/variables.scss';
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+
+    .title {
+        display: flex;
+        align-items: center;
+        font-size: 14px !important;
+    }
+
+    .toggler {
+        display: flex;
+        align-items: center;
+
+        span {
+            padding-right: 5px ;
+        }
+    }
+}

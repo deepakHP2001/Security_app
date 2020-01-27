@@ -1,0 +1,40 @@
+@import "./../../../styles/variables.scss";
+.otp-container {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    margin: 0 10px;
+  }
+  .otp-heading {
+      color: $pri-green;
+  }
+  .input-container {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1000px) {
+      width: 50%;
+    }
+
+    .input-field {
+      border: none;
+      width: 15%;
+      border-bottom: 2px solid $pri-green;
+      border-radius: 0 !important;
+      border-bottom: 1px solid $sushi-gray;
+      padding: 10px 0;
+      text-align: center;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .focus-field {
+      border-bottom: 1px solid $pri-green;
+    }
+  }
+}

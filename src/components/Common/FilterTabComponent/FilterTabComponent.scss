@@ -1,0 +1,36 @@
+@import "./../../../styles/variables.scss";
+
+.filter-wrapper {
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  .filter-head {
+    text-align: left;
+    font-size: 12px;
+    color: $dark-gray;
+    margin-right: 5px;
+  }
+
+  .tabs-wrapper {
+    display: flex;
+    .tab {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      margin: 0;
+      margin-left: 8px;
+      color: $med-gray;
+      border: 1px solid $sushi-gray-border;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+}

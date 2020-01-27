@@ -1,0 +1,58 @@
+@import "./../../../../styles/variables.scss";
+
+.truck-info-wrapper {
+  padding: 20px;
+
+  section {
+    label {
+      font-size: 14px;
+    }
+  }
+}
+
+.light-line {
+  height: 2px;
+}
+
+.odometer-wrapper {
+  padding-bottom: 10px;
+  .odometer-photo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .odometer-photo-icon {
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      height: 80px;
+      border-radius: 10px;
+      background: $filter-btn-gray;
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      svg {
+        color: $med-gray;
+      }
+    }
+
+    .selected-image {
+      position: relative;
+      img {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      i {
+        position: absolute;
+        top: -5px;
+        right: 7px;
+        svg {
+          height: 13px;
+          background: white;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

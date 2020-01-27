@@ -1,0 +1,253 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+button {
+  border: 0;
+  outline: none;
+
+  &:focus {
+    outline: none;
+    border: 0;
+    width: auto;
+  }
+}
+
+.btn-icon {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s ease-in-out;
+
+  &.small {
+    padding: 10px 28px;
+  }
+
+  &.round {
+    border-radius: 50%;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+  }
+
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+}
+
+.btn-info {
+  background-color: $info-bg;
+  color: $info-color;
+}
+
+.btn-white {
+  @include linear-gradient-bg(50deg, #fff, #fff);
+  color: $pri-green;
+  border: 1px solid $pri-green;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-green {
+  @include linear-gradient-bg(50deg, $pri-green, $pri-green);
+  color: #fff;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+
+.btn-green-flat {
+  padding: 10px 25px;
+}
+
+
+
+.btn-disabled {
+  @include linear-gradient-bg(50deg, $sushi-gray, $sushi-gray);
+  color: #fff;
+  pointer-events: none;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-orange {
+  @include linear-gradient-bg(50deg, $sec-orange, $pri-orange);
+  color: #fff;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-blue {
+  @include linear-gradient-bg(50deg, $sec-blue, $pri-blue);
+  color: #fff;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-black {
+  @include linear-gradient-bg(50deg, #000, #000);
+  color: #fff;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn--dark-shadow {
+  &:hover {
+    box-shadow: 0 4px 8px $dark-gray;
+  }
+}
+
+.btn--no-shadow {
+  &:hover {
+    box-shadow: 0 0 0 $dark-gray;
+  }
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn-smallest {
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.btn-medium {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-expand {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-wrapper {
+  margin-top: 20px;
+  position: relative;
+}
+
+.btn-yellow {
+  @include linear-gradient-bg(50deg, $pri-yellow, $pri-yellow);
+  color: $sec-yellow;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-red {
+  @include linear-gradient-bg(50deg, $pri-red, $pri-red);
+  color: #fff;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-red-smoke {
+  @include linear-gradient-bg(50deg, $red-smoke, $red-smoke);
+  color: $red;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-active-filter {
+  background-color: $blue-bg !important;
+  border: 1px solid $blue-bg !important;
+  color: $blue-color !important;
+  padding-right: 30px !important;
+}
+
+.nohover {
+  &:hover {
+    box-shadow: none;
+    cursor: default;
+  }
+}
+
+.btn-transparent {
+  border: 1px solid $sushi-gray-dark;
+  color: $sushi-gray-dark;
+}
+
+.btn-transparent-red {
+  background-color: rgba(0, 0, 0, 0);
+  color: $pri-red;
+  border: 1px solid $pri-red;
+  box-sizing: border-box;
+  padding: 13px 27px;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-transparent-green {
+  background-color: rgba(0, 0, 0, 0);
+  color: $pri-green;
+  border: 1px solid $pri-green;
+  box-sizing: border-box;
+  padding: 8px 27px;
+  border-radius: 8px;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-transparent-gray {
+  background-color: #fff;
+  color: $sushi-gray-med;
+  border: 1px solid $sushi-gray-med;
+  border-radius: 8px;
+
+  &:hover {
+    box-shadow: 0 4px 8px $med-gray;
+  }
+}
+
+.btn-normal {
+  padding: 14px 28px !important;
+}
+
+.btn-flat {
+  padding: 0 0;
+}
+
+.btn-green-small {
+  padding: 4px 16px;
+  border-radius: 8px;
+}
+
+.btn-card-small {
+  padding: 4px 16px;
+  border-radius: 8px;
+}
